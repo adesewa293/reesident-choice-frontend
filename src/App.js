@@ -11,9 +11,13 @@ import Residentlanding from "./Components/Residentlanding"
 import Services from "./Components/Services"
 import Stafflanding from "./Components/Stafflanding"
 
-import Header from "./Components/Header"
+import Navbar from "./Components/Navbar"
 import Footer from "./Components/Footer"
 import Body from "./Components/Body"
+
+import Login from "./Login"
+import Logout from "./Logout"
+import Profile from "./Profile"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -22,7 +26,10 @@ export default function App()
   return (
     <BrowserRouter>
     <div>
-      <Header />
+      <Navbar/>
+      <Login/>
+      <Profile/>
+      <Logout/>
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route path="/Services" element={< Services/>} />
