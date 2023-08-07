@@ -1,0 +1,12 @@
+.header {
+    display: grid;
+    grid-template-areas: "logo nav";
+}
+
+.nav {
+    grid-areas: nav;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    align-items: center;
+    justify-items: center;
+}
