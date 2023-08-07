@@ -18,7 +18,7 @@ export default function Menuupdate() {
 
   return (
     <div>
-      {menuItems.map((menu) => {
+      {menuItems.length > 0 ? menuItems.map((menu) => {
         return (
           <div key={menu._id}>
             <p>{menu.day}</p>
@@ -27,9 +27,14 @@ export default function Menuupdate() {
             {menu.imageUrl.map((image, i) => {
               return <img key={i} src={image} alt="menuitems" />;
             })}
+            <p>{menu.main_1}</p>
+            <p>{menu.main_2}</p>
+            <p>{menu.side_1}</p>
+            <p>{menu.side_2}</p>
+            <p>{menu.desert_1}</p>
           </div>
         );
-      })}
+      }): <p>The menulist is empty</p>} 
     </div>
   );
 }
