@@ -30,7 +30,7 @@ export default function App() {
         <Route path="/Privatemessage" element={< Privatemessage/>} />
         <Route path="/Stafflanding" element={< Stafflanding/>} />
         <Route path="/Eventupdate" element={< Eventupdate/>} />
-        <Route path="/Menuupdate " element={< Menuupdate />} />
+        <Route path="/Menuupdate" element={< Menuupdate />} />
       </Routes>
       <Footer />
     </div>
