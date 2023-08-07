@@ -13,10 +13,12 @@ import Stafflanding from "./Components/Stafflanding"
 
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
+import Body from "./Components/Body"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-export default function App() {
+export default function App() 
+{
   return (
     <BrowserRouter>
     <div>
@@ -32,8 +34,12 @@ export default function App() {
         <Route path="/Eventupdate" element={< Eventupdate/>} />
         <Route path="/Menuupdate " element={< Menuupdate />} />
       </Routes>
+      <Body/>
       <Footer />
     </div>
   </BrowserRouter>
   )
 }
+
+
+
