@@ -1,9 +1,11 @@
+
+
 .section_padding {
-    padding: 4rem 4rem
+    padding: 1rem 2rem
 }
 
 .footer {
-    background-color:lemonchiffon;
+    background-color:white;
 }
 
 .sb_footer {
@@ -28,10 +30,11 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    
 }
 
 a{
-    color: rgb(175,175,179);
+    color:lightblue;
     text-decoration: none;
 }
 
@@ -39,13 +42,15 @@ a{
     display: flex;
     flex-direction: row;
     width: 80%;
+    flex-grow: 1;
+    margin: 0 5px; 
+
 }
 
-.socialmedia img{
+.socialmedia img {
     width: 80%;
-
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     margin: 0 8px;
 }
 
@@ -61,17 +66,27 @@ a{
     justify-content: space-between;
     margin-top: 0.2rem;
 }
+#f_business {
+    transform: translateY(10px);
+}
 
+.f_footer-below-links {
+    display:flex;
+    flex-direction: row;
+}
 
-hr {
+.f_footer-below-links p{
+    font-size: 13px;
+    line-height: 15px;
+    margin-left: 2rem;
     color: black;
-    width: 100%;
+    font-weight: 600;
 }
 
 .f_footer-copyright p{
     font-size: 13px;
     line-height: 15px;
-    color: rgb(255, 255, 255);
+    color: black;
     font-weight: 600;
 }
 

@@ -8,10 +8,10 @@ import instagram from "../Images/instagram.png"
 
 const Footer=()=>{
   return(
-    <div ClassName="footer">
-      <div ClassName="f_footer section_padding">
-        <div ClassName="f_footer-links">
-          <div ClassName="f_footer-links-div">
+    <footer className="footer">
+      <div className="f_footer section_padding">
+        <div className="f_footer-links">
+          <div id="f_business" className="f_footer-links-div">
             <h4>For Business</h4>
               <a href="/Community">
                 <p>Create a Community</p>
@@ -38,7 +38,7 @@ const Footer=()=>{
                 <p>Support</p>
               </a>
           </div>
-          <div ClassName="f_footer-links_div">
+          <div className="f_footer-links_div">
             <h4>Company</h4>
             <a href="/blog">
                 <p>Blog</p>
@@ -50,23 +50,23 @@ const Footer=()=>{
                 <p>Contact</p>
               </a>
           </div>
-          <div ClassName="f_footer-links_div">
-            <h4> Cooming Soon on</h4>
-            <div ClassName="socialmedia">
-            <p><img src={fb} alt=""/></p>
-            <p><img src={twitter} alt=""/></p>
-            <p><img src={instagram} alt=""></img> </p>
+          <div className="f_footer-links_div">
+            <h4> Coming Soon on</h4>
+            <div className="socialmedia">
+            <p><img ClassName="socials" src={fb} alt=""/></p>
+            <p><img ClassName="socials" src={twitter} alt=""/></p>
+            <p><img ClassName="socials"src={instagram} alt=""></img> </p>
             </div>
           </div>
         </div>
         <hr></hr>
-        <div ClassName="f_footer-below">
-          <div ClassName="f_footer-copyright">
+        <div className="f_footer-below">
+          <div className="f_footer-copyright">
             <p>
               @{new Date().getFullYear()} ResidentChoice. All right reserved 
             </p>
           </div>
-          <div ClassName="f_footer-below-links">
+          <div className="f_footer-below-links">
             <a href="/terms"><div><p>Terms & Conditions</p></div></a>
             <a href="/terms"><div><p>Privacy</p></div></a>
             <a href="/terms"><div><p>Security</p></div></a>
@@ -75,7 +75,7 @@ const Footer=()=>{
         </div>
 
       </div>
-    </div>
+    </footer>
 
   )
 }
