@@ -14,7 +14,6 @@ export default function Menuupdate() {
   useEffect(() => {
     getMenu();
   }, []);
-  // console.log(menuItems);
 
   return (
     <div>
