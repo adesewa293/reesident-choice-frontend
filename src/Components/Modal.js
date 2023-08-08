@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Modal.css";
 import axios from "axios";
 
-function Modal() {
+function Modal({ menu }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [week, setWeek] = useState("");
   const [day, setDay] = useState("");
@@ -15,6 +15,7 @@ function Modal() {
   const [desert_1, setDesert1] = useState("");
   const [error, setError] = useState("");
 
+  console.log(menu);
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -23,7 +24,40 @@ function Modal() {
     setIsModalOpen(false);
   };
 
-  const handleSave = async () => {
+  useEffect(() => {
+    if (menu) {
+      setWeek(menu.week);
+      setDay(menu.day);
+      setMealTime(menu.mealtime);
+      setImgUrl(menu.imageUrl);
+      setMain1(menu.main_1);
+      setMain2(menu.main_2);
+      setSide1(menu.side_1);
+      setSide2(menu.side_2);
+      setDesert1(menu.desert_1);
+      setIsModalOpen(true);
+    }
+  }, [menu]);
+
+  async function handleEditMenu() {
+    await axios.put(
+      `https://resident-choice-api.onrender.com/menus/${menu._id}`,
+      {
+        week,
+        day,
+        mealtime,
+        imageUrl,
+        main_1,
+        main_2,
+        side_1,
+        side_2,
+        desert_1,
+      }
+    );
+    closeModal();
+  }
+
+  const handleAddMenu = async () => {
     try {
       const response = await axios.post(
         `https://resident-choice-api.onrender.com/menus`,
@@ -47,6 +81,13 @@ function Modal() {
       setError("Error adding new menuItem");
     }
   };
+  function handleSave() {
+    if (menu) {
+      handleEditMenu();
+    } else {
+      handleAddMenu();
+    }
+  }
 
   return (
     <div>
@@ -57,7 +98,7 @@ function Modal() {
             <span className="close" onClick={closeModal}>
               &times;
             </span>
-            {error && <p>{error}</p> }
+            {error && <p>{error}</p>}
             <input
               type="text"
               placeholder="week"
