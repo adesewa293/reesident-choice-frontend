@@ -1,17 +1,3 @@
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 .navigation {
     height: 60px;
     width: 100%;
@@ -25,14 +11,15 @@ body {
 }
 .brand-name {
     text-decoration: none;
-    color: black;
+    color:darkmagenta;
     font-size: 1.3rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .navigation-menu {
-    margin-left: auto;
+    margin-right: 30%;
 }
+
 
 .navigation-menu ul {
     display: flex;
@@ -42,11 +29,16 @@ body {
 .navigation-menu li {
     list-style-type: none;
     margin: 0 1rem;
+
 }
 .navigation-menu li a {
-text-decoration: none;
-display: block;
-width: 100%;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.navigation-menu li a:hover {
+    background-color: plum;
 }
 
 .nav-btn {
@@ -55,7 +47,7 @@ height: 40px;
 width: 40px;
 padding: 0.5rem;
 border-radius: 50%;
-background-color: lightblue;
+background-color:purple;
 cursor: pointer;
 transition: background-color 0.2s ease-in-out;
 position: absolute;
@@ -66,7 +58,7 @@ display: none;
 }
 
 .nav-btn:hover {
-    background-color:lightskyblue;
+    background-color:darkorchid;
 }
 
 @media screen and (max-width: 768px) {
@@ -97,6 +89,12 @@ display: none;
     }
     .navigation-menu li:hover {
     background-color: #eee;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-btn {
+    display: block;
     }
 }
 

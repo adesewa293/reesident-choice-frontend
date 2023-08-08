@@ -1,11 +1,14 @@
 import React from "react";
-import Login from "../Login";
-import Logout from "../Logout";
-import Navbar from "../Navbar.css";
+import './Navbar.css'
+
+
+
 
 import { useState } from "react";
 
-export default function Navbar(){
+
+export default function Navbar() {
+    
     const [isNavExpanded, setIsNavExpanded] = useState(false)
 
     return (
@@ -13,9 +16,9 @@ export default function Navbar(){
         <a href="/" className="brand-name">
         Resident Choice
         </a>
-        <button className="nav-btn" >
-            onClick={() => {
-                setIsNavExpanded(!isNavExpanded); 
+        <button className="nav-btn">
+            {() => {
+            setIsNavExpanded(!isNavExpanded); 
             }}
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -29,9 +32,15 @@ export default function Navbar(){
             clipRule="evenodd"
             />
         </svg>
-
         </button>
+        <div
+        className={
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+        ></div>
+        
         <div className="navigation-menu">
+        
         <ul>
             <li>
                 <a href="/home">Home</a>
