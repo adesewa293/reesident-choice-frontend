@@ -1,7 +1,7 @@
-// import React from "react";
-// import Login from "../Login";
-// import Logout from "../Logout";
-// import Header from "./Navbar.css";
+import React from "react";
+import Login from "../Login";
+import Logout from "../Logout";
+import Navbar from "../Navbar.css";
 
 import { useState } from "react";
 
@@ -43,7 +43,8 @@ export default function Navbar(){
                 <a href="/contact">Contact</a>
             </li>
                 </ul>
-            </div>
+        </div>
+
     </nav>
 );
 }

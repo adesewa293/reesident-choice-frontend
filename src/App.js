@@ -10,6 +10,7 @@ import Privatemessage from "./Components/Privatemessage"
 import Residentlanding from "./Components/Residentlanding"
 import Services from "./Components/Services"
 import Stafflanding from "./Components/Stafflanding"
+import Activitiess from "./Components/Activitiess"
 
 import Navbar from "./Components/Navbar"
 import Footer from "./Components/Footer"
