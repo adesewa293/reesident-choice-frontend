@@ -5,7 +5,7 @@ import Modal from "./Modal";
 export default function Menuupdate() {
   const [menuItems, setMenuItems] = useState([]);
   const [menuEdit, setMenuEdit] = useState(null);
-  const [Message, setMessage] = useState("")
+  const [message, setMessage] = useState("")
 
   const getMenu = async () => {
     const response = await axios.get(
@@ -33,6 +33,7 @@ export default function Menuupdate() {
   
   return (
     <div>
+        <i>{message}</i>
       {menuItems.length > 0 ? (
         menuItems.map((menu) => {
           return (
