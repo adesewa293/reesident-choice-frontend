@@ -7,7 +7,9 @@ function Modal({ menu }) {
   const [week, setWeek] = useState("");
   const [day, setDay] = useState("");
   const [mealtime, setMealTime] = useState("");
-  const [imageUrl, setImgUrl] = useState("");
+  const [mainImageUrl, setMainImgUrl] = useState("");
+  const [sideImageUrl, setSideImgUrl] = useState("");
+  const [dessertImageUrl, setDessertImgUrl] = useState("");
   const [main_1, setMain1] = useState("");
   const [main_2, setMain2] = useState("");
   const [side_1, setSide1] = useState("");
@@ -26,10 +28,13 @@ function Modal({ menu }) {
 
   useEffect(() => {
     if (menu) {
+      const [imageUrl1 = '', imageUrl2 = '', imageUrl3 = ''] =  menu.imageUrl;
       setWeek(menu.week);
       setDay(menu.day);
       setMealTime(menu.mealtime);
-      setImgUrl(menu.imageUrl);
+      setMainImgUrl(imageUrl1);
+      setSideImgUrl(imageUrl2)
+      setDessertImgUrl(imageUrl3)
       setMain1(menu.main_1);
       setMain2(menu.main_2);
       setSide1(menu.side_1);
@@ -39,7 +44,14 @@ function Modal({ menu }) {
     }
   }, [menu]);
 
+  function getCombinedImageUrls() {
+    return [mainImageUrl, sideImageUrl, dessertImageUrl].filter(
+      (url) => !!url
+    );
+  }
+
   async function handleEditMenu() {
+    const imageUrl = getCombinedImageUrls();
     await axios.put(
       `https://resident-choice-api.onrender.com/menus/${menu._id}`,
       {
@@ -59,6 +71,7 @@ function Modal({ menu }) {
 
   const handleAddMenu = async () => {
     try {
+      const imageUrl = getCombinedImageUrls();
       const response = await axios.post(
         `https://resident-choice-api.onrender.com/menus`,
         {
@@ -119,9 +132,21 @@ function Modal({ menu }) {
             />
             <input
               type="text"
-              placeholder="imageUrl"
-              value={imageUrl}
-              onChange={(e) => setImgUrl(e.target.value)}
+              placeholder="Main meal imageUrl"
+              value={mainImageUrl}
+              onChange={(e) => setMainImgUrl(e.target.value)}
+            />
+            <input
+              type="text"
+              placeholder="Side meal imageUrl"
+              value={sideImageUrl}
+              onChange={(e) => setSideImgUrl(e.target.value)}
+            />
+            <input
+              type="text"
+              placeholder="Dessert imageUrl"
+              value={dessertImageUrl}
+              onChange={(e) => setDessertImgUrl(e.target.value)}
             />
             <input
               type="text"
