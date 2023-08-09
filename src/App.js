@@ -39,7 +39,6 @@ export default function App() {
           <Route path="/Eventupdate" element={<Eventupdate />} />
           <Route path="/Menuupdate" element={<Menuupdate />} />
           <Route path="/Contact" element={<Contact />} />
-          {/* <Contentoption/> */}
         </Routes>
         <Footer />
       </div>
