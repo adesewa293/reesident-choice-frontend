@@ -5,6 +5,7 @@ import './Navbar.css'
 
 
 import { useState } from "react";
+import './Navbar.css'
 
 
 export default function Navbar() {
@@ -16,10 +17,11 @@ export default function Navbar() {
         <a href="/" className="brand-name">
         Resident Choice
         </a>
-        <button className="nav-btn">
-            {() => {
-            setIsNavExpanded(!isNavExpanded); 
-            }}
+        <button className="nav-btn" 
+            onClick={() => {
+                console.log("button click");
+                setIsNavExpanded(!isNavExpanded); 
+            }}> 
         <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -52,10 +54,13 @@ export default function Navbar() {
                 <a href="/contact">Contact</a>
             </li>
             <li>
-                <a href="/Menuupdate">Menu Update</a>
+                <a href="/Menuupdate">Menu</a>
             </li>
             <li>
-                <a href="/Eventupdate"></a>
+                <a href="/Activities">Activities</a>
+            </li>
+            <li>
+                <a href="/Messages">Update</a>
             </li>
                 </ul>
         </div>

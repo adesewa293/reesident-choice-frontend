@@ -31,7 +31,7 @@ export default function App()
       <Profile/>
       <Logout/>
       <Routes>
-        <Route exact path="/" element={<Homepage />} />
+        <Route exact path="/Homepage" element={<Homepage />} />
         <Route path="/Services" element={< Services/>} />
         <Route path="/Residentlanding" element={< Residentlanding/>} />
         <Route path="/Activities" element={< Activities/>} />
