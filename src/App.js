@@ -9,6 +9,7 @@ import Privatemessage from "./Components/Privatemessage"
 import Residentlanding from "./Components/Residentlanding"
 import Services from "./Components/Services"
 import Stafflanding from "./Components/Stafflanding"
+// import Contentoption from "./Components/Contentoption"
 // import About from "./Components/About"
 
 import Navbar from "./Components/Navbar";
@@ -18,6 +19,8 @@ import Profile from "./Profile";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Components/About";
+import Contact from "./Components/Contact";
+
 
 export default function App() {
   return (
@@ -35,8 +38,9 @@ export default function App() {
           <Route path="/Stafflanding" element={<Stafflanding />} />
           <Route path="/Eventupdate" element={<Eventupdate />} />
           <Route path="/Menuupdate" element={<Menuupdate />} />
+          <Route path="/Contact" element={<Contact />} />
+          {/* <Contentoption/> */}
         </Routes>
-
         <Footer />
       </div>
     </BrowserRouter>
