@@ -4,7 +4,6 @@ const VoteDown = ({ count, onVote }) => {
   return (
     <div>
       <button onClick={() => onVote("down")}>Vote Down</button>
-      <span>{count}</span>
     </div>
   );
 };
