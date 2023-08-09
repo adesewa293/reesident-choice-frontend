@@ -5,6 +5,7 @@ import Modal from "./Modal";
 export default function Menuupdate() {
   const [menuItems, setMenuItems] = useState([]);
   const [menuEdit, setMenuEdit] = useState(null);
+  const [Message, setMessage] = useState("")
 
   const getMenu = async () => {
     const response = await axios.get(
@@ -19,8 +20,17 @@ export default function Menuupdate() {
 
    function handleEdit(menu) {
     setMenuEdit(menu);
+    getMenu();
   }
-
+ 
+  async function handleDelete(id) {
+    const response = await axios.delete(
+      `https://resident-choice-api.onrender.com/menus/${id}`
+    );
+    setMessage(response.data.message);
+    getMenu();
+  }
+  
   return (
     <div>
       {menuItems.length > 0 ? (
@@ -38,7 +48,8 @@ export default function Menuupdate() {
               <p>{menu.side_1}</p>
               <p>{menu.side_2}</p>
               <p>{menu.desert_1}</p>
-              <button onClick={() => handleEdit(menu)}>Edit menulist</button>
+              <button onClick={() => handleEdit(menu)}>Edit menu</button>
+              <button onClick={() => handleDelete(menu._id)}>Delete menu</button>
             </div>
           );
         })
