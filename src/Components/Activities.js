@@ -8,6 +8,7 @@ export default function Activities() {
 
   useEffect(() => {
     getActivities()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
 

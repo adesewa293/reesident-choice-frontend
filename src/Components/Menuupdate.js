@@ -22,9 +22,10 @@ export default function Menuupdate() {
 
   function handleEdit(menu) {
     setMenuEdit(menu);
+  }
+  function handleSave() {
     getMenu();
   }
-
   async function handleDelete(id) {
     const response = await axios.delete(
       `https://resident-choice-api.onrender.com/menus/${id}`
@@ -43,7 +44,7 @@ export default function Menuupdate() {
               <div className="card" key={menu._id}>
                 <p>{menu.day}</p>
                 <p>Week: {menu.week}</p>
-                <p>{menu.mealtime}</p>
+                <p>mealtime: {menu.meal_time}</p>
                 <div className="image-slider-container">
                   <ImageCarousel>
                     {menu.imageUrl.map((image, i) => {
@@ -71,7 +72,7 @@ export default function Menuupdate() {
       ) : (
         <p>The menulist is empty</p>
       )}
-      <Modal menu={menuEdit} />
+      <Modal menu={menuEdit} onSave={handleSave} />
     </div>
   );
 }
