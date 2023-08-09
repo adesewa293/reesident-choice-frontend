@@ -3,9 +3,12 @@ import React from "react";
 import "./Login.css"
 
 const LoginButton = () => {
-  const { loginWithRedirect } = useAuth0();
+  const { loginWithRedirect, isAuthenticated } = useAuth0();
 
-  return <button nameClass='login_btn' onClick={() => loginWithRedirect()}>Log In</button>;
+
+
+  return !isAuthenticated && <button className='login_btn'onClick={() => loginWithRedirect()}>Log In</button>;
+main
 };
 
 export default LoginButton;

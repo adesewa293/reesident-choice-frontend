@@ -5,6 +5,7 @@ import './Navbar.css'
 
 
 import { useState } from "react";
+import './Navbar.css'
 
 
 export default function Navbar() {
@@ -16,10 +17,11 @@ export default function Navbar() {
         <a href="/" className="brand-name">
         Resident Choice
         </a>
-        <button className="nav-btn">
-            {() => {
-            setIsNavExpanded(!isNavExpanded); 
-            }}
+      
+        <button className="nav-btn" 
+            onClick={() => {
+                setIsNavExpanded(!isNavExpanded); 
+            }}> main
         <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
