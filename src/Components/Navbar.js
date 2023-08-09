@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Navbar.css'
 import { useState } from "react";
 import "./Navbar.css";
@@ -12,9 +13,9 @@ export default function Navbar() {
   return (
     <nav className="navigation">
       {/* ... */}
-      <a href="/" className="brand-name">
+      <Link to="/" className="brand-name">
         Resident Choice
-        </a>
+        </Link>
         <button className="nav-btn" 
             onClick={() => {
                 console.log("button click");
@@ -46,22 +47,22 @@ export default function Navbar() {
         
         <ul>
             <li>
-                <a href="/homepage">Home</a>
+                <Link to="/homepage">Home</Link>
             </li>
             <li>
-                <a href="/about">About</a>
+                <Link to="/about">About</Link>
             </li>
             <li>
-                <a href="/contact">Contact</a>
+                <Link to="/contact">Contact</Link>
             </li>
             <li>
-                <a href="/Menuupdate">Menu</a>
+                <Link to="/Menuupdate">Menu</Link>
             </li>
             <li>
-                <a href="/Activities">Activities</a>
+                <Link to="/Activities">Activities</Link>
             </li>
             <li>
-                <a href="/Messages">Update</a>
+                <Link to="/Messages">Update</Link>
             </li>
                 </ul>
         </div>
