@@ -1,0 +1,32 @@
+.aboutpage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333; 
+}
+
+.about-heading {
+    font-family:Cambria, Cochin, Georgia, Times;
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: white; 
+    margin-bottom: 1rem; 
+}
+
+.aboutpage p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.aboutpage h2 {
+    color:darkorchid;
+    display:flex;
+    justify-content: center;
+}
+.aboutpage_footer {
+    margin-top: 6rem; 
+    text-align: left; 
+    font-size: 0.8rem; 
+    color: plum;
+}

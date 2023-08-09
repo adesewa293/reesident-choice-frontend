@@ -11,10 +11,8 @@ import Services from "./Components/Services"
 import Stafflanding from "./Components/Stafflanding"
 // import About from "./Components/About"
 
-
-import Navbar from "./Components/Navbar"
-import Footer from "./Components/Footer"
-import Body from "./Components/Body"
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 import Profile from "./Profile";
 
@@ -38,7 +36,7 @@ export default function App() {
           <Route path="/Eventupdate" element={<Eventupdate />} />
           <Route path="/Menuupdate" element={<Menuupdate />} />
         </Routes>
-        <Body />
+
         <Footer />
       </div>
     </BrowserRouter>
