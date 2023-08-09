@@ -1,27 +1,25 @@
-// import React from "react";
-// import Login from "../Login";
-// import Logout from "../Logout";
-// import Header from "./Navbar.css";
-
+import React from "react";
+import './Navbar.css'
 import { useState } from "react";
 import "./Navbar.css";
-import Login from "../Login";
-import Logout from "../Logout";
+
+
 
 export default function Navbar() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+    
+    const [isNavExpanded, setIsNavExpanded] = useState(false)
 
   return (
     <nav className="navigation">
+      {/* ... */}
       <a href="/" className="brand-name">
         Resident Choice
-      </a>
-      <button
-        className="nav-btn"
-        onClick={() => {
-          setIsNavExpanded(!isNavExpanded);
-        }}
-      >
+        </a>
+        <button className="nav-btn" 
+            onClick={() => {
+                console.log("button click");
+                setIsNavExpanded(!isNavExpanded); 
+            }}> 
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -34,22 +32,40 @@ export default function Navbar() {
             clipRule="evenodd"
           />
         </svg>
-      </button>
-      <Login />
-      <Logout />
-      <div className="navigation-menu">
+         {/* ... */}
+        </button>
+        <div
+        className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }>
+            <ul>
+              {/* ... */}
+            </ul>
+        </div>
+        
+        <div className="navigation-menu">
+        
         <ul>
-          <li>
-            <a href="/home">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+            <li>
+                <a href="/homepage">Home</a>
+            </li>
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/contact">Contact</a>
+            </li>
+            <li>
+                <a href="/Menuupdate">Menu</a>
+            </li>
+            <li>
+                <a href="/Activities">Activities</a>
+            </li>
+            <li>
+                <a href="/Messages">Update</a>
+            </li>
+                </ul>
+        </div>
+
     </nav>
   );
 }

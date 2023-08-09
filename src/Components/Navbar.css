@@ -11,14 +11,15 @@
 }
 .brand-name {
     text-decoration: none;
-    color: black;
+    color:darkmagenta;
     font-size: 1.3rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .navigation-menu {
-    margin-left: auto;
+    margin-right: 20%;
 }
+
 
 .navigation-menu ul {
     display: flex;
@@ -28,11 +29,16 @@
 .navigation-menu li {
     list-style-type: none;
     margin: 0 1rem;
+
 }
 .navigation-menu li a {
-text-decoration: none;
-display: block;
-width: 100%;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.navigation-menu li a:hover {
+    background-color: plum;
 }
 
 .nav-btn {
@@ -41,7 +47,7 @@ height: 40px;
 width: 40px;
 padding: 0.5rem;
 border-radius: 50%;
-background-color: lightblue;
+background-color:purple;
 cursor: pointer;
 transition: background-color 0.2s ease-in-out;
 position: absolute;
@@ -52,7 +58,7 @@ display: none;
 }
 
 .nav-btn:hover {
-    background-color:lightskyblue;
+    background-color:darkorchid;
 }
 
 @media screen and (max-width: 768px) {
@@ -87,13 +93,20 @@ display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .navigation-menu ul {
-    display: none;
+    .nav-btn {
+    display: block;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .navigation-menu ul {
+        /* ... */
+    }
+    .nav-btn {
+        display: block;
+    }
     .navigation-menu.expanded ul {
-    display: block;
+        display: block;
     }
 }
+ 
