@@ -51,6 +51,12 @@ export default function Navbar() {
             <li>
                 <a href="/contact">Contact</a>
             </li>
+            <li>
+                <a href="/Menuupdate">Menu Update</a>
+            </li>
+            <li>
+                <a href="/Eventupdate"></a>
+            </li>
                 </ul>
         </div>
 
