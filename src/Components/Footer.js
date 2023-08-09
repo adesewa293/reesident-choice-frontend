@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import './Footer.css'
 import fb from "../Images/facebook.png"
 import twitter from "../Images/twitter.png"
@@ -13,42 +14,42 @@ const Footer=()=>{
         <div className="f_footer-links">
           <div id="f_business" className="f_footer-links-div">
             <h4>For Business</h4>
-              <a href="/Community">
+              <Link to="/Community">
                 <p>Create a Community</p>
-              </a>
-              <a href="/healthplan">
+              </Link>
+              <Link to="/healthplan">
                 <p>Health Plan</p>
-              </a>
-              <a href="/individual">
+              </Link>
+              <Link to="/individual">
                 <p>Individual</p>
-              </a>
+              </Link>
           </div>
           <div className="f_footer-links_div">
             <h4>Main</h4>
-            <a href="/resource">
+            <Link to="/resource">
                 <p>Resource center</p>
-              </a>
-              <a href="/resource">
+              </Link>
+              <Link to="/resource">
                 <p>Testimonials</p>
-              </a>
-              <a href="/resource">
+              </Link>
+              <Link to="/resource">
                 <p>Log In</p>
-              </a>
-              <a href="/resource">
+              </Link>
+              <Link to="/resource">
                 <p>Support</p>
-              </a>
+              </Link>
           </div>
           <div className="f_footer-links_div">
             <h4>Company</h4>
-            <a href="/blog">
+            <Link to="/blog">
                 <p>Blog</p>
-              </a>
-              <a href="/press">
+              </Link>
+              <Link to="/press">
                 <p>Press</p>
-              </a>
-              <a href="/contact">
+              </Link>
+              <Link to="/contact">
                 <p>Contact</p>
-              </a>
+              </Link>
           </div>
           <div className="f_footer-links_div">
             <h4> Coming Soon on</h4>
@@ -67,10 +68,10 @@ const Footer=()=>{
             </p>
           </div>
           <div className="f_footer-below-links">
-            <a href="/terms"><div><p>Terms & Conditions</p></div></a>
-            <a href="/terms"><div><p>Privacy</p></div></a>
-            <a href="/terms"><div><p>Security</p></div></a>
-            <a href="/terms"><div><p>Cookies Declaration</p></div></a>
+            <Link to="/terms"><div><p>Terms & Conditions</p></div></Link>
+            <Link to="/terms"><div><p>Privacy</p></div></Link>
+            <Link to="/terms"><div><p>Security</p></div></Link>
+            <Link to="/terms"><div><p>Cookies Declaration</p></div></Link>
           </div>
         </div>
 

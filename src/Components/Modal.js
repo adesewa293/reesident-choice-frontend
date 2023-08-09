@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Modal.css";
 import axios from "axios";
 
-function Modal({ menu }) {
+function Modal({ menu, onSave }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [week, setWeek] = useState("");
   const [day, setDay] = useState("");
@@ -28,13 +28,13 @@ function Modal({ menu }) {
 
   useEffect(() => {
     if (menu) {
-      const [imageUrl1 = '', imageUrl2 = '', imageUrl3 = ''] =  menu.imageUrl;
+      const [imageUrl1 = "", imageUrl2 = "", imageUrl3 = ""] = menu.imageUrl;
       setWeek(menu.week);
       setDay(menu.day);
       setMealTime(menu.mealtime);
       setMainImgUrl(imageUrl1);
-      setSideImgUrl(imageUrl2)
-      setDessertImgUrl(imageUrl3)
+      setSideImgUrl(imageUrl2);
+      setDessertImgUrl(imageUrl3);
       setMain1(menu.main_1);
       setMain2(menu.main_2);
       setSide1(menu.side_1);
@@ -45,9 +45,7 @@ function Modal({ menu }) {
   }, [menu]);
 
   function getCombinedImageUrls() {
-    return [mainImageUrl, sideImageUrl, dessertImageUrl].filter(
-      (url) => !!url
-    );
+    return [mainImageUrl, sideImageUrl, dessertImageUrl].filter((url) => !!url);
   }
 
   async function handleEditMenu() {
@@ -67,6 +65,7 @@ function Modal({ menu }) {
       }
     );
     closeModal();
+    onSave();
   }
 
   const handleAddMenu = async () => {
@@ -89,6 +88,7 @@ function Modal({ menu }) {
       console.log("New menu added:", response.data);
 
       closeModal();
+      onSave();
     } catch (error) {
       console.log("error", error);
       setError("Error adding new menuItem");
