@@ -53,9 +53,9 @@ const Footer=()=>{
           <div className="f_footer-links_div">
             <h4> Coming Soon on</h4>
             <div className="socialmedia">
-            <p><img ClassName="socials" src={fb} alt=""/></p>
-            <p><img ClassName="socials" src={twitter} alt=""/></p>
-            <p><img ClassName="socials"src={instagram} alt=""></img> </p>
+            <p><img className="socials" src={fb} alt=""/></p>
+            <p><img className="socials" src={twitter} alt=""/></p>
+            <p><img className="socials"src={instagram} alt=""></img> </p>
             </div>
           </div>
         </div>
