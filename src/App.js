@@ -13,7 +13,6 @@ import Stafflanding from "./Components/Stafflanding";
 
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Body from "./Components/Body";
 
 import Profile from "./Profile";
 
@@ -38,7 +37,7 @@ export default function App() {
           <Route path="/Eventupdate" element={<Eventupdate />} />
           <Route path="/Menuupdate" element={<Menuupdate />} />
         </Routes>
-        <Body />
+
         <Footer />
       </div>
     </BrowserRouter>

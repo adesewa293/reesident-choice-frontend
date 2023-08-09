@@ -1,10 +1,10 @@
-import React from 'react'
-// import Modal from '../Components/Modal'
+import React from "react";
+import Slideshow from "./Slideshow";
 
 export default function Homepage() {
   return (
     <div>
-      {/* <Modal /> */}
+      <Slideshow />
     </div>
-  )
+  );
 }

@@ -1,0 +1,44 @@
+.slideshow {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slideshow-images {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+}
+
+.slideshow-caption {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.slideshow-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slideshow-controls button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+}
