@@ -3,7 +3,7 @@ import React from "react";
 const VoteUp = ({ count, onVote }) => {
   return (
     <div>
-      <button onClick={() => onVote("up")}>Vote Up</button>
+      <button className="menuButton" onClick={() => onVote("up")}>Vote Up</button>
     </div>
   );
 };
