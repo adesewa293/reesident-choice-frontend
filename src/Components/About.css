@@ -30,3 +30,15 @@
     font-size: 0.8rem; 
     color: plum;
 }
+@media (min-width: 768px) {
+    .aboutpage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    }
+
+    .aboutpage h2 {
+    display: block;
+    text-align: center;
+    }
+}

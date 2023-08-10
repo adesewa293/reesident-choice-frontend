@@ -23,7 +23,7 @@ import "./Contact.css"
         
             <Row className="mb-5 mt-3">
             <Col lg="8">
-                <h1 className="display-4 mb-4">Contact Us</h1>
+                {/* <h1 className="display-4 mb-4">Reach Out to Us</h1> */}
             </Col>
             </Row>
             <Row className="sec_sp">

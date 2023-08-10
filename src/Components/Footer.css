@@ -1,11 +1,13 @@
-
+*{
+    background-color:honeydew;
+}
 
 .section_padding {
     padding: 1rem 2rem
 }
 
 .footer {
-    background-color:white;
+    background-color:honeydew;
 }
 
 .f_footer {

@@ -10,11 +10,11 @@
     border-radius: 5px;
 }
 .contact__form {
-    background-color: #f8f9fa;
+    background-color:aliceblue;
     padding: 20px;
     padding-right: -50%;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 32%; 
-    padding-right: 100%;
+    padding-right: 2%;
 }

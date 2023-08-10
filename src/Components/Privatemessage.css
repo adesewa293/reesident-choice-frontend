@@ -1,0 +1,75 @@
+textarea {
+    background-color: honeydew;
+    padding-right: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20%; 
+    padding-right: 10%;
+    width: 300px;
+
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 15px;
+    padding: 20%;
+}
+
+.record-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.btn-record,
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-record:hover,
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+.response-time {
+    font-size: 1rem;
+    color: #888;
+}
+
+.btn_form { 
+display: flex;
+justify-content: center;
+margin-top: 15px;
+}
+
+h1, p {
+    
+}
+
