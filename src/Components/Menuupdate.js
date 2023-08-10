@@ -86,9 +86,15 @@ export default function Menuupdate() {
               <p>side meal 2: {menu.side_2}</p>
               <p>Dessert: {menu.desert_1}</p>
               <p>Total Votes: {menu.voteup - menu.votedown}</p>{" "}
-              <div>
-                <VoteUp onVote={() => handleVote(menu._id, "voteup")} />
-                <VoteDown onVote={() => handleVote(menu._id, "votedown")} />
+              <div className="vote-buttons">
+                <VoteUp
+                  className="vote-buttons"
+                  onVote={() => handleVote(menu._id, "voteup")}
+                />
+                <VoteDown
+                  className="vote-buttons"
+                  onVote={() => handleVote(menu._id, "votedown")}
+                />
               </div>
               <button onClick={() => handleEdit(menu)}>Edit menu</button>
               <button onClick={() => handleDelete(menu._id)}>

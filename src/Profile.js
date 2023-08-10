@@ -1,5 +1,6 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import React, { useEffect, useState } from "react";
+import "./Profile.css";
 
 const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -30,7 +31,7 @@ const Profile = () => {
   return (
     isAuthenticated && (
       <div>
-        <p>
+        <p className="greeting">
           {greeting}, {user.given_name}!
         </p>
       </div>

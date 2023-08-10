@@ -74,19 +74,22 @@ export default function Activities() {
 
   return (
     <div className="activities-container">
-      <h2>Activities for the Next 7 Days</h2>
-      <ul>
+      <h2 className="activities-title">This Week</h2>
+      <ul className="activity-list">
         {activities.map((activity, index) => (
           <li key={index} className="activity-item">
             <div>
-              <img src={activity.image} alt={"activity"} />
+              <img
+                className="activity-image"
+                src={activity.image}
+                alt={"activity"}
+              />
             </div>
             <div>
               <h3>{activity.description}</h3>
               <p>{activity.summary}</p>
               <p>{activity.formattedDateTime}</p>
             </div>
-
             <Link to="/message" className="activity-button">
               RSVP
             </Link>

@@ -44,29 +44,8 @@ const Slideshow = () => {
               src={images[currentImageIndex].url}
               alt={images[currentImageIndex].caption}
             />
-            <div className="slideshow-caption">
-              {images[currentImageIndex].caption}
-            </div>
           </div>
         </div>
-      </div>
-      <div className="slideshow-controls">
-        <button
-          onClick={() =>
-            setCurrentImageIndex(
-              (prevIndex) => (prevIndex - 1 + images.length) % images.length
-            )
-          }
-        >
-          Previous
-        </button>
-        <button
-          onClick={() =>
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
-          }
-        >
-          Next
-        </button>
       </div>
     </div>
   );

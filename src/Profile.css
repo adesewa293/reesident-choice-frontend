@@ -1,0 +1,8 @@
+.greeting {
+  font-family: "Ultra", serif;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-left: 10px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
