@@ -18,6 +18,8 @@ import Profile from "./Profile";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Components/About";
+import Contact from "./Components/Contact";
+
 
 export default function App() {
   return (
@@ -35,8 +37,8 @@ export default function App() {
           <Route path="/Stafflanding" element={<Stafflanding />} />
           <Route path="/Eventupdate" element={<Eventupdate />} />
           <Route path="/Menuupdate" element={<Menuupdate />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
-
         <Footer />
       </div>
     </BrowserRouter>
