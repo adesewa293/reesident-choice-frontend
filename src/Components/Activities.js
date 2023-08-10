@@ -7,8 +7,17 @@ import Elvis from "../Images/elvis.png";
 import Gardening from "../Images/gardening.jpeg";
 import Knitting from "../Images/knitting club.jpg";
 import LiveMusic from "../Images/livemusic.png";
+import Arts from "../Images/Pressed-Flower-Craft-600x500.jpg";
+import Boxing from "../Images/boxing_gloves.jpg";
 
-const localImageFilenames = [Gardening, Knitting, Elvis, LiveMusic];
+const localImageFilenames = [
+  Gardening,
+  Knitting,
+  Elvis,
+  LiveMusic,
+  Arts,
+  Boxing,
+];
 
 export default function Activities() {
   const [activities, setActivities] = useState([]);
