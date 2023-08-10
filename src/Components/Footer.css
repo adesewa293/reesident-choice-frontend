@@ -8,7 +8,7 @@
     background-color:white;
 }
 
-.sb_footer {
+.f_footer {
     display: flex;
     flex-direction: column;
 }
@@ -91,7 +91,7 @@ a{
 }
 
 @media screen and (max-width: 850px) {
-    .sb_footer-heading h1 {
+    .f_footer-heading h1 {
         font-size: 44px;
         line-height: 50px;
     }

@@ -28,7 +28,7 @@ export default function App() {
         <Navbar />
         <Profile />
         <Routes>
-          <Route exact path="/Homepage" element={<Homepage />} />
+          <Route exact path="/" element={<Homepage />} />
           <Route exact path="/About" element={<About />} />
           <Route exact path="/Services" element={<Services />} />
           <Route path="/Residentlanding" element={<Residentlanding />} />
