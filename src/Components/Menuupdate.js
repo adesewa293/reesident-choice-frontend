@@ -58,6 +58,7 @@ export default function Menuupdate() {
     }
   };
 
+
   return (
     <div>
       <Modal menu={menuEdit} onSave={handleSave} />
