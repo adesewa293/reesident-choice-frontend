@@ -55,34 +55,6 @@ export default function Navbar() {
             )}
           </ul>
         </div>
-
-        <div className="navigation-menu">
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
-
-            {isAuthenticated && (
-              <>
-                <li>
-                  <a href="/Menuupdate">Menu</a>
-                </li>
-                <li>
-                  <a href="/Activities">Activities</a>
-                </li>
-                <li>
-                  <a href="/Message">Message</a>
-                </li>
-              </>
-            )}
-          </ul>
-        </div>
       </nav>
       <Login />
       <Logout />
