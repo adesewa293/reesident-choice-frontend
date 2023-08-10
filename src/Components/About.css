@@ -16,17 +16,39 @@
 .aboutpage p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.7rem; 
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+h1{
+    color:darkorchid;
+    display:flex;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .aboutpage h2 {
     color:darkorchid;
     display:flex;
     justify-content: center;
+    font-size: 10;
+    font-family:cursive ;
 }
 .aboutpage_footer {
-    margin-top: 6rem; 
+    margin-top: 4rem; 
     text-align: left; 
     font-size: 0.8rem; 
-    color: plum;
+    color: darkorchid;
+}
+@media (min-width: 768px) {
+    .aboutpage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    }
+
+    .aboutpage h2 {
+    display: block;
+    text-align: center;
+    }
 }

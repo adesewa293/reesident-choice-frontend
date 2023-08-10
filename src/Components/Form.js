@@ -63,7 +63,14 @@ export default function Form() {
 
   return (
     <div>
-      <h2>Send Email</h2>
+      <h2 className="title"> Welcome to ChatWave 🌊</h2>
+      <p className="instructions">
+        Type your message below or use the voice
+        recorder for a hands-free experience.
+      </p>
+      <p className="response-time">
+        Expect a response within 1-2 hours. Let's keep the conversation going!
+      </p>
       <form onSubmit={sendEmail}>
         <textarea
           placeholder="Message"
@@ -74,12 +81,13 @@ export default function Form() {
           required
         ></textarea>
         {!recording && (
-          <button type="button" onClick={startRecording}>
+          <button className="btn_form" type="button" onClick={startRecording}>
             Start Recording
           </button>
         )}
-        <button type="submit">Send Email</button>
+        <button className="btn_form" type="submit">Send Email</button>
       </form>
     </div>
   );
 }
+ 

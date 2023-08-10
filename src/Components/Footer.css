@@ -1,14 +1,16 @@
-
+*{
+    background-color:honeydew;
+}
 
 .section_padding {
     padding: 1rem 2rem
 }
 
 .footer {
-    background-color:white;
+    background-color:honeydew;
 }
 
-.sb_footer {
+.f_footer {
     display: flex;
     flex-direction: column;
 }
@@ -91,7 +93,7 @@ a{
 }
 
 @media screen and (max-width: 850px) {
-    .sb_footer-heading h1 {
+    .f_footer-heading h1 {
         font-size: 44px;
         line-height: 50px;
     }

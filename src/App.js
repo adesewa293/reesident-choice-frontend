@@ -27,9 +27,9 @@ export default function App() {
         <Navbar />
         <Profile />
         <Routes>
-          <Route exact path="/" element={<Homepage/>} />
-          <Route exact path="/About" element={<About/>} />
-          <Route exact path="/Services" element={<Services/>} />
+          <Route exact path="/" element={<Homepage />} />
+          <Route exact path="/About" element={<About />} />
+          <Route exact path="/Services" element={<Services />} />
           <Route path="/Residentlanding" element={<Residentlanding />} />
           <Route path="/Activities" element={<Activities />} />
           <Route path="/Message" element={<Privatemessage />} />
