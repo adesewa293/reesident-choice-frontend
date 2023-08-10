@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Slideshow.css";
 import LadysingingImage from "../Images/Ladysinging.jpeg";
 import MandancingImage from "../Images/mandancing.jpeg";
-import LadyWearingGlassesImage from "../Images/ladywearingglasses.jpeg";
+import LadyWearingGlassesImage from "../Images/Ladywearingglasses.jpeg";
 import ManInHatImage from "../Images/maninhat.jpeg";
 
 const Slideshow = () => {
