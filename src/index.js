@@ -18,7 +18,6 @@ root.render(
       >
         <App />
       </Auth0Provider>
-      ,
     </HelmetProvider>
   </React.StrictMode>
 );
