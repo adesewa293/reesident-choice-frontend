@@ -58,22 +58,20 @@ textarea {
 }
 
 
-.response-time {
+.response-time, .instructions{
     font-size: 1rem;
-    color: #888;
+    color: darkmagenta;
+    font-size: 13px;
 }
 
 .btn_form { 
 display: flex;
 justify-content: center;
 margin-top: 15px;
+;
+
 }
 
-h1, p {
-    
-}
 
-/* p {
-    margin-bottom: 10%;
-}
- */
+
+

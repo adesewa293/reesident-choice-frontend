@@ -68,6 +68,9 @@ export default function Form() {
         Type your message below or use the voice
         recorder for a hands-free experience.
       </p>
+      <p className="response-time">
+        Expect a response within 1-2 hours. Let's keep the conversation going!
+      </p>
       <form onSubmit={sendEmail}>
         <textarea
           placeholder="Message"
@@ -84,9 +87,7 @@ export default function Form() {
         )}
         <button className="btn_form" type="submit">Send Email</button>
       </form>
-      <p className="response-time">
-        Expect a response within 1-2 hours. Let's keep the conversation going!
-      </p>
     </div>
   );
 }
+ 
