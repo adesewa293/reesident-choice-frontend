@@ -9,7 +9,6 @@ import Privatemessage from "./Components/Privatemessage";
 import Residentlanding from "./Components/Residentlanding";
 import Services from "./Components/Services";
 import Stafflanding from "./Components/Stafflanding";
-// import About from "./Components/About"
 
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";

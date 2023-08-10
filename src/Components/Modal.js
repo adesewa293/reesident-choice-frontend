@@ -89,6 +89,8 @@ function Modal({ menu, onSave }) {
 
       closeModal();
       onSave();
+
+
     } catch (error) {
       console.log("error", error);
       setError("Error adding new menuItem");
@@ -104,13 +106,14 @@ function Modal({ menu, onSave }) {
 
   return (
     <div>
-      <button onClick={openModal}>Add Menu Items</button>
+      <button className="menuButton" onClick={openModal}>Add Menu Items</button>
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">
             <span className="close" onClick={closeModal}>
               &times;
             </span>
+            { menu ? <h2>Edit Menu</h2> : <h2>Add new menu-item</h2>}
             {error && <p>{error}</p>}
             <input
               type="text"

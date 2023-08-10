@@ -5,7 +5,7 @@ export default function About() {
   return (
     <main>
       <div className="aboutpage">
-        <h2> Woodlands Care Home App</h2>
+        <h2> ResidentChoice Care Home App</h2>
         <p>Welcome to the Woodlands Care Home App, a dedicated platform designed to enhance the living experience for our cherished residents. With a commitment to fostering a sense of community, engagement, and personal choice, our app empowers residents, staff, and management alike.</p>
         <h2>Our Vision</h2>
         <p>At Woodlands Care Home, we believe in providing a home that is not just a physical space, but a thriving community where residents feel valued, heard, and in control of their daily lives. Our app was born out of the desire to create an environment that reflects our residents' individual preferences, encourages their participation in meaningful activities, and fosters open communication.</p>

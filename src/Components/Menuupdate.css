@@ -20,7 +20,8 @@
 .image-slider-container{
   height: 100%;
   width: 100%;
-   max-height: 200px;  
+   max-height: 200px; 
+    
 }
 
 .image-slider-container img {
@@ -30,7 +31,7 @@
   object-fit: contain;
 }
 
-button {
+.menuButton {
   margin-top: 8px;
   margin-right: 8px;
   background-color: purple;
@@ -40,11 +41,11 @@ button {
   padding: 8px 16px;
   cursor: pointer;
 }
-button:last-child {
+.menuButton:last-child {
   margin-right: 0;
 }
 
-button:hover {
+.menuButton:hover {
   background-color: plum;
 }
 
@@ -52,4 +53,10 @@ i {
   display: block;
   margin: 16px 0;
   color: #ff5722;
+  font-size: x-large;
+}
+@media (max-width: 480px) {
+  .card-container{
+    padding: 0 20px;
+  }
 }

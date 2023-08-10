@@ -1,4 +1,7 @@
 .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 60px;
     width: 100%;
     display: flex;
@@ -18,17 +21,24 @@
 
 .navigation-menu {
     margin-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 10px;
+  
 }
 
 
 .navigation-menu ul {
     display: flex;
     padding: 0;
+    align-items: center;
 }
 
 .navigation-menu li {
     list-style-type: none;
     margin: 0 1rem;
+
 
 }
 .navigation-menu li a {
@@ -107,6 +117,8 @@ display: none;
     }
     .navigation-menu.expanded ul {
         display: block;
+        z-index: 1;
+        
     }
 }
  

@@ -3,6 +3,7 @@ import "./Navbar.css";
 import Login from "../Login";
 import Logout from "../Logout";
 import { useAuth0 } from "@auth0/auth0-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -12,9 +13,9 @@ export default function Navbar() {
     <>
       <nav className="navigation">
         {/* ... */}
-        <a href="/" className="brand-name">
+        <Link to="/" className="brand-name">
           Resident Choice
-        </a>
+        </Link>
 
         <button
           className="nav-btn"
@@ -30,40 +31,34 @@ export default function Navbar() {
             isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
           }
         >
-          <ul>{/* ... */}</ul>
-        </div>
-
-        <div className="navigation-menu">
           <ul>
             <li>
-              <a href="/homepage">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
-
             {isAuthenticated && (
               <>
                 <li>
-                  <a href="/Menuupdate">Menu</a>
+                  <Link to="/Menuupdate">Menu</Link>
                 </li>
                 <li>
-                  <a href="/Activities">Activities</a>
+                  <Link to="/Activities">Activities</Link>
                 </li>
                 <li>
-                  <a href="/Message">Message</a>
+                  <Link to="/Message">Message</Link>
                 </li>
               </>
             )}
+          <Login />
+          <Logout />
           </ul>
         </div>
       </nav>
-      <Login />
-      <Logout />
     </>
   );
 }
-
