@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="navigation-menu">
           <ul>
             <li>
-              <a href="/homepage">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <a href="/about">About</a>

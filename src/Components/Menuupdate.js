@@ -20,6 +20,8 @@ export default function Menuupdate() {
     setMenuItems(response.data);
   };
 
+
+
   useEffect(() => {
     const loadInitialData = async () => {
       setIsLoading(true);
@@ -55,6 +57,7 @@ export default function Menuupdate() {
       console.error("Error voting:", err);
     }
   };
+
 
   return (
     <div>
