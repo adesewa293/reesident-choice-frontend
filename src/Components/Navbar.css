@@ -20,13 +20,13 @@
 }
 
 .navigation-menu {
-    margin-right: 20%;
+    /* margin-right: 15%; */
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding-right: 10px;
-  
 }
+
 
 
 .navigation-menu ul {
