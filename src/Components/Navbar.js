@@ -31,7 +31,7 @@ export default function Navbar() {
           }
         >
           <ul>
-          <li>
+            <li>
               <a href="/">Home</a>
             </li>
             <li>
@@ -53,12 +53,11 @@ export default function Navbar() {
                 </li>
               </>
             )}
+          <Login />
+          <Logout />
           </ul>
         </div>
       </nav>
-      <Login />
-      <Logout />
     </>
   );
 }
-

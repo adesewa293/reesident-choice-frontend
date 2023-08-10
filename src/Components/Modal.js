@@ -106,7 +106,7 @@ function Modal({ menu, onSave }) {
 
   return (
     <div>
-      <button onClick={openModal}>Add Menu Items</button>
+      <button className="menuButton" onClick={openModal}>Add Menu Items</button>
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">

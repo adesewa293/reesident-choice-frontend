@@ -90,8 +90,8 @@ export default function Menuupdate() {
                 <VoteUp onVote={() => handleVote(menu._id, "voteup")} />
                 <VoteDown onVote={() => handleVote(menu._id, "votedown")} />
               </div>
-              <button onClick={() => handleEdit(menu)}>Edit menu</button>
-              <button onClick={() => handleDelete(menu._id)}>
+              <button className="menuButton" onClick={() => handleEdit(menu)}>Edit menu</button>
+              <button className="menuButton" onClick={() => handleDelete(menu._id)}>
                 Delete menu
               </button>
             </div>
