@@ -20,7 +20,8 @@
 .image-slider-container{
   height: 100%;
   width: 100%;
-   max-height: 200px;  
+   max-height: 200px; 
+    
 }
 
 .image-slider-container img {
@@ -53,4 +54,9 @@ i {
   margin: 16px 0;
   color: #ff5722;
   font-size: x-large;
+}
+@media (max-width: 480px) {
+  .card-container{
+    padding: 0 20px;
+  }
 }

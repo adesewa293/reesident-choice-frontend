@@ -30,7 +30,30 @@ export default function Navbar() {
             isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
           }
         >
-          <ul>{/* ... */}</ul>
+          <ul>
+          <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            {isAuthenticated && (
+              <>
+                <li>
+                  <a href="/Menuupdate">Menu</a>
+                </li>
+                <li>
+                  <a href="/Activities">Activities</a>
+                </li>
+                <li>
+                  <a href="/Message">Message</a>
+                </li>
+              </>
+            )}
+          </ul>
         </div>
 
         <div className="navigation-menu">
