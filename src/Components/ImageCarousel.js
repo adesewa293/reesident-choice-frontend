@@ -1,5 +1,5 @@
 import React, { useState, Children, useRef } from 'react';
-import './ImageCarousel.css'; // Import your custom CSS for styling
+import './ImageCarousel.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const ImageCarousel = ({ children }) => {

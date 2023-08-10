@@ -3,6 +3,8 @@ import axios from "axios";
 import Modal from "./Modal";
 import "./Menuupdate.css";
 import ImageCarousel from "./ImageCarousel";
+import VoteUp from "./VoteUp";
+import VoteDown from "./VoteDown";
 
 export default function Menuupdate() {
   const [menuItems, setMenuItems] = useState([]);
@@ -22,6 +24,9 @@ export default function Menuupdate() {
 
   function handleEdit(menu) {
     setMenuEdit(menu);
+  }
+
+  function handleSave() {
     getMenu();
   }
 
@@ -33,45 +38,53 @@ export default function Menuupdate() {
     getMenu();
   }
 
+  const handleVote = async (id, action) => {
+    try {
+      await axios.post(
+        `https://resident-choice-api.onrender.com/menus/${id}/${action}`
+      );
+      getMenu();
+    } catch (err) {
+      console.error("Error voting:", err);
+    }
+  };
+
   return (
     <div className="card-container">
-      <i>{message}</i>
+      <p>{message}</p>
       {menuItems.length > 0 ? (
-        menuItems.map((menu) => {
-          return (
-            <div>
-              <div className="card" key={menu._id}>
-                <p>{menu.day}</p>
-                <p>Week: {menu.week}</p>
-                <p>{menu.mealtime}</p>
-                <div className="image-slider-container">
-                  <ImageCarousel>
-                    {menu.imageUrl.map((image, i) => {
-                      return (
-                        <div>
-                          <img key={i} src={image} alt="menuitems" />
-                        </div>
-                      );
-                    })}
-                  </ImageCarousel>
-                </div>
-                <p>First Meal Option: {menu.main_1}</p>
-                <p>Second Meal Option: {menu.main_2}</p>
-                <p>side meal 1: {menu.side_1}</p>
-                <p>side meal 2: {menu.side_2}</p>
-                <p>Dessert: {menu.desert_1}</p>
-                <button onClick={() => handleEdit(menu)}>Edit menu</button>
-                <button onClick={() => handleDelete(menu._id)}>
-                  Delete menu
-                </button>
-              </div>
+        menuItems.map((menu) => (
+          <div className="card" key={menu._id}>
+            <p>{menu.day}</p>
+            <p>Week: {menu.week}</p>
+            <p>mealtime: {menu.meal_time}</p>
+            <div className="image-slider-container">
+              <ImageCarousel>
+                {menu.imageUrl.map((image, i) => (
+                  <div key={i}>
+                    <img src={image} alt="menuitems" />
+                  </div>
+                ))}
+              </ImageCarousel>
             </div>
-          );
-        })
+            <p>First Meal Option: {menu.main_1}</p>
+            <p>Second Meal Option: {menu.main_2}</p>
+            <p>side meal 1: {menu.side_1}</p>
+            <p>side meal 2: {menu.side_2}</p>
+            <p>Dessert: {menu.desert_1}</p>
+            <p>Total Votes: {menu.voteup - menu.votedown}</p>{" "}
+            <div>
+              <VoteUp onVote={() => handleVote(menu._id, "voteup")} />
+              <VoteDown onVote={() => handleVote(menu._id, "votedown")} />
+            </div>
+            <button onClick={() => handleEdit(menu)}>Edit menu</button>
+            <button onClick={() => handleDelete(menu._id)}>Delete menu</button>
+          </div>
+        ))
       ) : (
         <p>The menulist is empty</p>
       )}
-      <Modal menu={menuEdit} />
+      <Modal menu={menuEdit} onSave={handleSave} />
     </div>
   );
 }
