@@ -1,20 +1,10 @@
-.form-group {
-    margin-bottom: 15px;
-    height: 50px;
-    width: 439px;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: whitesmoke;
 }
-.form-control {
-    width: 439px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.contact__form {
-    background-color: #f8f9fa;
-    padding: 20px;
-    padding-right: -50%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 32%; 
-    padding-right: 100%;
+
+.contact-component {
+  background-color: #fff;
+  margin: 20px;
 }

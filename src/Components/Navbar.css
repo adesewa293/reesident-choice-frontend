@@ -1,19 +1,17 @@
 .navigation {
-
   background-color: #9934a9;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 60px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 0.5rem 0rem;
-  
-    color: black;
-    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0rem;
 
+  color: black;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
 .brand-name {
   text-decoration: none;
@@ -24,27 +22,21 @@
 }
 
 .navigation-menu {
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-right: 10px;
-
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-right: 10px;
 }
 
 .navigation-menu ul {
-
-
-    display: flex;
-    padding: 0;
-    align-items: center;
+  display: flex;
+  padding: 0;
+  align-items: center;
 }
 
 .navigation-menu li {
-    list-style-type: none;
-    margin: 0 1rem;
-
-
+  list-style-type: none;
+  margin: 0 1rem;
 }
 .navigation-menu li a {
   text-decoration: none;
@@ -53,7 +45,7 @@
 }
 
 .navigation-menu li a:hover {
-  background-color: white;
+  background-color: black;
 }
 
 .nav-btn {
@@ -62,7 +54,7 @@
   width: 40px;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: whitesmoke;
+  background-color: black;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
@@ -98,12 +90,12 @@
     margin: 0;
   }
   .navigation-menu li a {
-    color: white;
+    color: black;
     width: 100%;
     padding: 1.5rem 0;
   }
   .navigation-menu li:hover {
-    background-color: #eee;
+    background-color: black;
   }
 }
 
@@ -114,17 +106,15 @@
 }
 
 @media screen and (max-width: 768px) {
-
-    .navigation-menu ul {
-        /* ... */
-    }
-    .nav-btn {
-        display: block;
-    }
-    .navigation-menu.expanded ul {
-        display: block;
-        z-index: 1;
-        
-    }
-
+  .navigation-menu ul {
+    /* ... */
+  }
+  .nav-btn {
+    display: block;
+  }
+  .navigation-menu.expanded ul li {
+    display: block;
+    z-index: 1;
+    color: white;
+  }
 }
