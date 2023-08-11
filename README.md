@@ -1,70 +1,36 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+### What the idea was:
+The idea was to develop a mobile app for Woodlands care home that allows residents to independently choose their daily lunch preferences and select activities for the upcoming week. The app should also enable residents to send voice notes or text messages with activity suggestions to the manager. Staff should be able to log in to update the weekly menu and activity schedule, while residents and staff each have their own separate login interfaces.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### What your solution was: 
+Our solution was to design and develop a user-friendly mobile app that catered to the specific needs of Woodlands care home. We created distinct interfaces for residents and staff, each tailored to their roles. Residents can log in, view the day's menu options, select their desired meal, and choose activities for the week. They can also record voice notes or send text messages with activity suggestions. Staff members can log in, access a backend dashboard, and update the week's menu and activity schedule. The app integrates with Google Calendar for seamless event planning.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. Things you overcame:
 
-### `npm test`
+-Technical Integration: Integrating with Google Calendar posed a challenge due to API integration and ensuring synchronisation between the app and the calendar events.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Voice Notes Handling: Implementing voice note functionality required tackling audio recording, storage, and potential conversion to text for manager review.
 
-### `npm run build`
+-User Accessibility: Designing an interface that accommodates both elderly residents and staff members with varying technical skills, ensuring usability and accessibility.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 4. Things you'd do if you had more time:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Given more time, we would focus on further enhancing the app in several ways:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Enhanced Personalisation: Develop algorithms that learn from residents' choices and tailor activity and meal suggestions accordingly.
 
-### `npm run eject`
+-Improved Voice Recognition: Invest more time in refining voice note conversion to text, ensuring accurate transcription.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-Expanded Notification System: Implement a comprehensive notification system that reminds residents of upcoming activities, meal choices, and staff of their administrative tasks.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-Enhanced Design and Layout: Allocate time to design and layout improvements, ensuring a visually appealing and user-friendly interface that aligns with the preferences of both residents and staff.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-Extended Platform Support: Extend the app to other platforms, such as tablets or web interfaces, to accommodate a broader range of devices.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### In summary, our solution was to develop a user-friendly mobile app that facilitates meal and activity choices for residents, enables staff to manage schedules, and integrates with Google Calendar. We overcame technical challenges related to integration, voice notes, accessibility, and design. If given more time, we would focus on personalisation, voice recognition, notifications, testing, platform expansion, and enhancing the design and layout of both the app and website interfaces.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
