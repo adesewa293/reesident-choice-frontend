@@ -1,4 +1,6 @@
 .navigation {
+
+  background-color: #9934a9;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,27 +10,31 @@
     align-items: center;
     position: relative;
     padding: 0.5rem 0rem;
-    background-color: #fff;
+  
     color: black;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+
 }
 .brand-name {
-    text-decoration: none;
-    color:darkmagenta;
-    font-size: 1.3rem;
-    margin-left: 2rem;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 2rem;
+  margin-left: 2rem;
+  font-family: "Ultra", serif;
 }
 
 .navigation-menu {
-    /* margin-right: 26%; */
+
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding-right: 10px;
+
 }
 
-
 .navigation-menu ul {
+
+
     display: flex;
     padding: 0;
     align-items: center;
@@ -41,43 +47,43 @@
 
 }
 .navigation-menu li a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
+  text-decoration: none;
+  display: block;
+  width: 100%;
 }
 
 .navigation-menu li a:hover {
-    background-color: plum;
+  background-color: white;
 }
 
 .nav-btn {
-border: 0;
-height: 40px;
-width: 40px;
-padding: 0.5rem;
-border-radius: 50%;
-background-color:purple;
-cursor: pointer;
-transition: background-color 0.2s ease-in-out;
-position: absolute;
-top: 50%;
-right: 25px;
-transform: translateY(-50%);
-display: none;
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
 }
 
 .nav-btn:hover {
-    background-color:darkorchid;
+  background-color: white;
 }
 
 @media screen and (max-width: 768px) {
-    .navigation-menu ul {
+  .navigation-menu ul {
     display: none;
-    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .navigation-menu ul {
+  .navigation-menu ul {
     position: absolute;
     top: 60px;
     left: 0;
@@ -86,28 +92,29 @@ display: none;
     height: calc(100vh - 77px);
     background-color: white;
     border-top: 1px solid black;
-    }
-    .navigation-menu li {
+  }
+  .navigation-menu li {
     text-align: center;
     margin: 0;
-    }
-    .navigation-menu li a {
-    color: black;
+  }
+  .navigation-menu li a {
+    color: white;
     width: 100%;
     padding: 1.5rem 0;
-    }
-    .navigation-menu li:hover {
+  }
+  .navigation-menu li:hover {
     background-color: #eee;
-    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .nav-btn {
+  .nav-btn {
     display: block;
-    }
+  }
 }
 
 @media screen and (max-width: 768px) {
+
     .navigation-menu ul {
         /* ... */
     }
@@ -119,5 +126,5 @@ display: none;
         z-index: 1;
         
     }
+
 }
- 

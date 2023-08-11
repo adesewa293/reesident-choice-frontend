@@ -6,3 +6,78 @@
 li {
   list-style: none;
 }
+
+.activities-container {
+  text-align: center;
+}
+
+.activity-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+@media screen and (min-width: 600px) {
+  .activity-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .activity-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.activity-item {
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.activity-item img {
+  max-width: 200px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+.activity-item h3,
+.activity-item p {
+  max-width: 250px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.activity-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.activity-button:hover {
+  background-color: #0056b3;
+}
+
+.activities-title {
+  font-family: "Ultra", serif;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-left: 10px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+}

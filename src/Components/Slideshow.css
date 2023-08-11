@@ -12,10 +12,12 @@
 
 .image-container {
   width: 1000px;
-  height: 6npm 00px;
+  height: 740px;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
 }
 
 .image-item img {

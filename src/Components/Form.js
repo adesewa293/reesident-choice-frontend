@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import emailjs from "@emailjs/browser";
+import "./Form.css";
 
 export default function Form() {
   const [message, setMessage] = useState("");
@@ -62,24 +63,38 @@ export default function Form() {
   };
 
   return (
-    <div>
-      <h2>Send Email</h2>
-      <form onSubmit={sendEmail}>
-        <textarea
-          placeholder="Message"
-          value={recording ? transcribedText : message}
-          onChange={handleTextAreaChange}
-          rows={10}
-          cols={50}
-          required
-        ></textarea>
-        {!recording && (
-          <button type="button" onClick={startRecording}>
-            Start Recording
-          </button>
-        )}
-        <button type="submit">Send Email</button>
-      </form>
+    <div className="center-container">
+      <div className="form__card">
+        <header>
+          <span className="form__card-title">Send Us A Message</span>
+        </header>
+        <div className="form__card-content">
+          {/* Your form goes here */}
+          <form onSubmit={sendEmail}>
+            {/* Textarea for message */}
+            <textarea
+              placeholder="Type here or click start recording"
+              value={recording ? transcribedText : message}
+              onChange={handleTextAreaChange}
+              rows={20}
+              cols={95}
+              required
+            ></textarea>
+            {!recording && (
+              <button
+                className="form__card-button"
+                type="button"
+                onClick={startRecording}
+              >
+                Start Recording
+              </button>
+            )}
+            <button className="form__card-button" type="submit">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
