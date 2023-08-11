@@ -62,7 +62,7 @@ export default function Menuupdate() {
       <i>{message}</i>
       <div className="card-container">
         {isLoading ? (
-          <LoadingAnimation />
+          <LoadingAnimation classNmae="loading" />
         ) : menuItems.length === 0 ? (
           <p>The menu list is empty</p>
         ) : (
@@ -96,8 +96,13 @@ export default function Menuupdate() {
                   onVote={() => handleVote(menu._id, "votedown")}
                 />
               </div>
-              <button className="menuButton" onClick={() => handleEdit(menu)}>Edit menu</button>
-              <button className="menuButton" onClick={() => handleDelete(menu._id)}>
+              <button className="menuButton" onClick={() => handleEdit(menu)}>
+                Edit menu
+              </button>
+              <button
+                className="menuButton"
+                onClick={() => handleDelete(menu._id)}
+              >
                 Delete menu
               </button>
             </div>
