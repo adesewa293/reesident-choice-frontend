@@ -66,12 +66,10 @@ export default function Form() {
     <div className="center-container">
       <div className="form__card">
         <header>
-          <span className="form__card-title">Send Us A Message</span>
+          <span className="form__card-title"></span>
         </header>
         <div className="form__card-content">
-          {/* Your form goes here */}
           <form onSubmit={sendEmail}>
-            {/* Textarea for message */}
             <textarea
               placeholder="Type here or click start recording"
               value={recording ? transcribedText : message}
