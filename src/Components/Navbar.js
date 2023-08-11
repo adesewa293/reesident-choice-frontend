@@ -54,8 +54,8 @@ export default function Navbar() {
                 </li>
               </>
             )}
-          <Login />
-          <Logout />
+            <Login />
+            <Logout />
           </ul>
         </div>
       </nav>

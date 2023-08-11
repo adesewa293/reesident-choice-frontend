@@ -13,10 +13,10 @@ import Boxing from "../Images/boxing_gloves.jpg";
 const localImageFilenames = [
   Gardening,
   Knitting,
-  Elvis,
   LiveMusic,
   Arts,
   Boxing,
+  Elvis,
 ];
 
 export default function Activities() {

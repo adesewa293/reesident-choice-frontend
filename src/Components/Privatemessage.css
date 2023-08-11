@@ -1,3 +1,12 @@
-#app body {
-  background-color: #fc92b2;
+.custombackground {
+  background-color: #fc6402;
+}
+.message-title {
+  font-family: "Ultra", serif;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-left: 10px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  text-align: center;
 }
