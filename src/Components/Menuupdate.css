@@ -22,8 +22,7 @@
   height: 100%;
   width: 100%;
 
-   max-height: 200px; 
-
+  max-height: 200px;
 }
 
 .image-slider-container img {
@@ -57,8 +56,15 @@ i {
   color: #ff5722;
   font-size: x-large;
 }
+
+.LoadingAnimation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 480px) {
-  .card-container{
+  .card-container {
     padding: 0 20px;
   }
 }

@@ -42,10 +42,11 @@
   text-decoration: none;
   display: block;
   width: 100%;
+  color: white;
 }
 
 .navigation-menu li a:hover {
-  background-color: black;
+  background-color: #fc6402;
 }
 
 .nav-btn {
